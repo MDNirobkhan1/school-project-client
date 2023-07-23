@@ -9,7 +9,7 @@ const Details = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/collegeBooking")
+    fetch("https://school-project-server-eight.vercel.app/collegeBooking")
       .then((res) => res.json())
       .then((data) => {
         setCollegeCard(data.find((college) => college._id === id));

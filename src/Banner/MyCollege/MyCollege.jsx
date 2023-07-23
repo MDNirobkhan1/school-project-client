@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const MyCollege = () => {
   const [collages, setColleges] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/student")
+    fetch("https://school-project-server-eight.vercel.app/student")
       .then((res) => res.json())
       .then((data) => setColleges(data));
   }, []);

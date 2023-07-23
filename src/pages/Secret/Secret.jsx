@@ -19,7 +19,7 @@ const Secret = () => {
     const onSubmit = data => {
 
 
-        fetch("http://localhost:5000/student", {
+        fetch("https://school-project-server-eight.vercel.app/student", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const Secret = () => {
         //         if (user) {
         //             const savStudent = { name: data.name, email: data.email, subject: data.subject, date: data.date, number: data.number }
         //             console.log('savStudent', savStudent);
-        //             fetch('http://localhost:5000/student', {
+        //             fetch('https://school-project-server-eight.vercel.app/student', {
         //                 method: 'POST',
         //                 headers: {
         //                     'content-type': 'application/json'

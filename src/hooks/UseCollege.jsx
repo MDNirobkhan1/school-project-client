@@ -5,7 +5,7 @@ const useCollege = () => {
     const [loding, setLoding]= useState(true)
 
     useEffect(() => {
-        fetch('http://localhost:5000/collegeBooking')
+        fetch('https://school-project-server-eight.vercel.app/collegeBooking')
         .then(res => res.json())
         .then(data=> {
             setCollegeCard(data);
