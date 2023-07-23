@@ -7,7 +7,7 @@ const AddmissionItem = ({item}) => {
     const {name}=item;
     return (
         <div>
-            <Link className="font-semibold text-1xl"><li>{name}</li></Link>
+            <Link to='/secret' className="font-semibold text-1xl"><li>{name}</li></Link>
         </div>
     );
 };

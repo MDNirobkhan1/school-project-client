@@ -10,7 +10,8 @@ import Addmission from "../Banner/Addmission/Addmission";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import Secret from "../pages/Secret/Secret";
-import PrivateRoute from "./PrivateRoute";
+import MyCollege from "../Banner/MyCollege/MyCollege";
+import Details from "../Banner/Details/Details";
 // import GropuPhoto from "../Banner/GropuPhoto/GropuPhoto";
 
  export const router = createBrowserRouter([
@@ -40,7 +41,15 @@ import PrivateRoute from "./PrivateRoute";
             },
             {
                 path:'secret',
-                element:<PrivateRoute><Secret></Secret></PrivateRoute>
+                element:<Secret></Secret>
+            },
+            {
+                path:'mycollege',
+                element:<MyCollege></MyCollege>
+            },
+            {
+                path:'/details/:id',
+                element:<Details></Details>
             }
            
         ]

@@ -16,8 +16,7 @@ const Navbar = () => {
         <Link to={"/"}><li><a>Home</a></li></Link>
         <Link to="/college"><li> <a>College</a></li></Link>
         <Link to="/addmission"><li><a>Addmission</a></li></Link>
-        <Link to="/secret"><li> <a>Secret</a></li></Link>
-        <li><a>My College</a></li>
+        <Link to='/mycollege'><li><a>My College</a></li></Link>
     </>
     return (
         <>
